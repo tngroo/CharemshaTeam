@@ -12,4 +12,60 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 16px;
 }
 
+button {
+  border: none;
+  cursor: pointer;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  border: none;
+  text-align: center;
 
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000000;
+  font-family: "Mulish", sans-serif;
+
+  border: 1px solid #CCC16E;
+  padding: 6px 12px;
+  background-color: #CCC16E;
+}
+
+button:hover,
+button:focus {
+  background-color: #FFFFFF;
+}
+
+button:active {
+  box-shadow: inset 0 0 8px 0 rgba(0, 0, 0, 0.32);
+  background-color: #CCC16E;
+}
+
+button.inactive {
+  opacity: 30%;
+  pointer-events: none;
+}
+
+a {
+  font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000000;
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+}
+
+a:active {
+  color: #8668C7;
+  text-decoration: none;
+}
+
+a.inactive {
+  opacity: 30%;
+  pointer-events: none;
+}
