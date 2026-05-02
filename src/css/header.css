@@ -49,8 +49,22 @@
     gap: 16px;
   }
   .header__button-order {
-    margin-left: auto;
-
     display: flex;
+    justify-content: center;
+
+    width: 119px;
+
+    margin-right: 0;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .header__nav {
+    margin-left: 32px;
+  }
+  .header__nav-list {
+    gap: 32px;
+  }
+  .header__button-order {
+    width: 192px;
   }
 }
