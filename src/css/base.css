@@ -37,6 +37,7 @@ button:hover,
 button:focus,
 a.btn:hover,
 a.btn:focus {
+  text-decoration: none;
   background-color: #FFFFFF;
 }
 
