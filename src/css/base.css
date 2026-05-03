@@ -33,12 +33,6 @@ button, a.btn {
   background-color: #CCC16E;
 }
 
-button:hover,
-button:focus,
-a.btn:hover,
-a.btn:focus {
-  background-color: #FFFFFF;
-}
 
 button:active,
 a.btn:active {
@@ -63,6 +57,14 @@ a:hover,
 a:focus {
   text-decoration: underline;
   text-decoration-skip-ink: none;
+}
+
+button:hover,
+button:focus,
+a.btn:hover,
+a.btn:focus {
+  text-decoration: none;
+  background-color: #FFFFFF;
 }
 
 a:active {
