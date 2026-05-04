@@ -1,0 +1,103 @@
+.connect {
+  padding: 64px 0;
+}
+
+.connect_subject {
+  margin-bottom: 16px;
+}
+.connect_heading {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+
+  font-family: 'Mulish', sans-serif;
+
+  width: 335px;
+
+  margin-bottom: 24px;
+}
+.connect_slogan {
+  font-weight: 400;
+  font-size: 18px;
+
+  /* чомусь переносить слово*/
+  width: 335px;
+
+  margin-bottom: 48px;
+}
+
+/* Shop Information */
+
+.inform-shop {
+  margin-bottom: 34px;
+}
+
+.inform-shop__item {
+  margin-bottom: 24px;
+}
+/* прибираємо останній відступ, щоб зробити 34 */
+.inform-shop__item:last-child {
+  margin-bottom: 0;
+}
+.inform-shop__icon {
+  margin-bottom: 16px;
+
+  fill: #000000;
+}
+.contact_text {
+  /* чомусь текст не такий товстий */
+  font-family: 'Mulish', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+
+  margin-bottom: 8px;
+}
+.inform-contact__link {
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+}
+
+/* Feedback Form */
+
+.feedback-form {
+}
+.feedback-wrapper {
+  margin-bottom: 24px;
+}
+.feedback-label {
+  /* Чомусь не працює маржин (Name* Phone*...)*/
+  margin-bottom: 8px;
+}
+.feedback-field {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.feedback-input {
+  border: 1px solid #000000 15%;
+
+  padding: 8px 12px;
+
+  width: 100%;
+
+  outline: none;
+}
+.feedback-wrapper-comment {
+  margin-bottom: 24px;
+}
+.comment-form {
+  width: 100%;
+
+  padding: 12px;
+
+  /* забороняє корист. змінювати розмір коментаря */
+  resize: none;
+  /* прибирає контур коментаря(інпута) при фокусі */
+  outline: none;
+}
+.feedback-button {
+  width: 100%;
+}
