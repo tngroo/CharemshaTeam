@@ -1,10 +1,6 @@
 :root {
-    --primary-font: "Sora", sans-serif;
-    --secondary-font: "Mulish", sans-serif;
-}
-
-body {
-    font-family: var(--primary-font);
+    --primary-font: "Mulish", sans-serif;
+    --secondary-font: "Sora", sans-serif;
 }
 
 .container {
@@ -15,7 +11,7 @@ body {
 }
 
 .gallery {
-    padding: 40px 0;
+    padding: 64px 0;
 }
 
 .gallery-info {
@@ -27,10 +23,11 @@ body {
 }
 
 .gallery-title {
+    font-family: var(--primary-font);
     font-weight: 600;
     font-size: 28px;
     line-height: 1.2;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
     color: #121212;
 }
 
@@ -50,6 +47,7 @@ body {
     margin: 0;
 }
 
+.gallery-item picture,
 .gallery-item img {
     width: 100%;
     display: block;
@@ -89,7 +87,6 @@ body {
         align-items: start;
     }
 
-    
     .gallery-item:nth-child(1) img,
     .gallery-item:nth-child(4) img {
         aspect-ratio: 1 / 1; 
@@ -100,9 +97,8 @@ body {
         aspect-ratio: 640 / 426;
     }
 
-    
     .gallery-item:nth-child(4) {
-        margin-top: -40px; 
+        margin-top: -114px; 
     }
 }
 
