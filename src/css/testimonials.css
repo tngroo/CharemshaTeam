@@ -49,9 +49,10 @@ color: #000000;
 padding: 24px 0;
 }
 
-.card-title{
-    font-weight: 600;
+.testimonials-card-title{
+font-weight: 600;
 line-height: 1.5;
+font-size: 16px;
 color: #000000;
 }
 .testimonials-item {
