@@ -33,12 +33,6 @@ button, a.btn {
   background-color: #CCC16E;
 }
 
-button:hover,
-button:focus,
-a.btn:hover,
-a.btn:focus {
-  background-color: #FFFFFF;
-}
 
 button:active,
 a.btn:active {
@@ -53,7 +47,6 @@ button.inactive, a.btn.inactive {
 
 a {
   cursor: pointer;
-  font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     color: #000000;
@@ -65,6 +58,14 @@ a:focus {
   text-decoration-skip-ink: none;
 }
 
+button:hover,
+button:focus,
+a.btn:hover,
+a.btn:focus {
+  text-decoration: none;
+  background-color: #FFFFFF;
+}
+
 a:active {
   color: #8668C7;
   text-decoration: none;
@@ -73,4 +74,9 @@ a:active {
 a.inactive {
   opacity: 30%;
   pointer-events: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
