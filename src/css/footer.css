@@ -1,0 +1,316 @@
+body {
+     font-family: 'Mulish', sans-serif;
+    color: #434455;
+    background-color: rgb(255, 255, 255);
+}
+
+.section-title,
+.card-title {
+ font-family: 'Mulish', sans-serif;
+ font-family: var(--font7);
+font-weight: 400;
+font-size: 24px;
+line-height: 140%;
+letter-spacing: -0.01em;
+text-align: center;
+color: #000;
+}
+
+
+ul, ol {
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+
+h1,h2,h3,h4,h5,h6, p {
+margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden {
+position: absolute;
+white-space: nowrap;
+width: 1px;
+height: 1px;
+overflow: hidden;
+border: 0;
+padding: 0;
+clip: rect(0 0 0 0);
+clip-path: inset(100%);
+margin: -1px;
+}
+
+
+
+@media screen and (min-width: 768px) {
+.container {
+    max-width: 768px;
+}
+}
+
+@media screen and (min-width: 1158px) {
+.container {
+    max-width: 1158px;
+    padding: 0 15px;
+}
+}
+
+
+/* СЕКЦИЯ */
+.benefits-section {
+  padding: 64px 20px; 
+  background: #fff;
+}
+
+/* КОНТЕЙНЕР */
+.container {
+  width: 100%;
+}
+
+/* ЗАГОЛОВОК */
+.section-title {
+  font-family: var(--font7);
+font-weight: 400;
+font-size: 36px;
+line-height: 120%;
+letter-spacing: -0.01em;
+text-align: center;
+color: #000;
+max-width: 300px;
+margin: 0 auto 32px;
+}
+
+/* СПИСОК КАРТОЧЕК */
+.card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px; /* 👈 как ты просил */
+  list-style: none;
+  align-items: center; /* 👈 центрируем карточки */
+}
+
+/* КАРТОЧКА */
+.card {
+  width: 335px; /* 👈 фиксированная ширина */
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 32px 12px;
+  box-sizing: border-box;
+  background: #f2f2f2;
+}
+
+/* ЗАГОЛОВОК В КАРТОЧКЕ */
+.card-title {
+  font-weight: 400;
+font-size: 24px;
+line-height: 140%;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+/* ТЕКСТ */
+.card-text {
+  font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+  text-align: center;
+ 
+}
+
+.card-text-first {
+  font-family: var(--font5);
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+  color: #000;
+ 
+  text-align: center;
+}
+
+.second-line {
+  text-align: center;  /* центр */
+  font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+}
+
+@media (min-width: 768px) {
+   /* СЕКЦИЯ */
+  .benefits-section {
+    padding: 64px 32px;
+    background: #fff;
+  }
+
+  /* КОНТЕЙНЕР */
+  .container {
+    max-width: 768px;
+    margin: 0 auto;
+  }
+
+  /* ЗАГОЛОВОК */
+  .section-title {
+     max-width: 600px; /* подбираешь */
+    margin: 0 auto 32px; /* 👈 центр + отступ вниз */
+    text-align: center;
+    font-family: var(--font7);
+font-weight: 400;
+font-size: 36px;
+line-height: 120%;
+letter-spacing: -0.01em;
+color: #000;
+  }
+
+  /* СПИСОК КАРТОЧЕК */
+  .card-list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  /* КАРТОЧКА */
+  .card {
+    width: 704px;
+    max-width: 100%;
+    margin: 0 auto;
+
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 32px 12px;
+    box-sizing: border-box;
+
+    background: #f2f2f2;
+  }
+
+  /* ЗАГОЛОВОК В КАРТОЧКЕ */
+  .card-title {
+    font-weight: 400;
+font-size: 24px;
+line-height: 140%;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+
+  /* ТЕКСТ */
+ .card-text {
+ font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+  color: #000;
+  text-align: center;
+ max-width: 680px;
+}
+
+.card-text-first {
+  font-family: var(--font5);
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+  color: #000;
+   text-align: center;
+  max-width: 680px;
+  margin: 0 auto;
+}
+
+.second-line {
+  text-align: center;  /* центр */
+  font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+}
+}
+
+
+/* ===== DESKTOP ===== */
+@media (min-width: 1158px) {
+  .benefits-section {
+    padding: 120px 0;
+    background: #fff;
+  }
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+  /* контейнер карточек */
+  .card-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 1312px;
+    margin: 0 auto;
+  }
+
+  /* сама карточка */
+  .card {
+ border: 1px solid rgba(0, 0, 0, 0.2);
+padding: 32px 12px;
+width: 416px;
+height: 194px;
+background: #f2f2f2;
+  }
+
+  .card-title {
+    font-weight: 400;
+font-size: 24px;
+line-height: 140%;
+    text-align: center;
+     margin-bottom: 24px;
+  }
+
+  .card-text {
+    font-family: var(--font5);
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+text-align: center;
+color: #000;
+width: 392px;
+  }
+
+  
+.card-text-first {
+  font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+  margin: 0;
+  text-align: center;
+  max-width: 392px;
+}
+
+.second-line {
+  text-align: center; 
+  font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+}
+
+  .section-title {
+    max-width: 870px;
+    font-family: var(--font7);
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 120%;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: #000;
+    margin: 0 auto 32px;
+      
+  }
+}
