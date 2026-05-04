@@ -1,20 +1,4 @@
 
-
-@media screen and (min-width: 768px) {
-.container {
-    max-width: 768px;
-}
-}
-
-@media screen and (min-width: 1440px) {
-.container {
-    max-width: 1158px;
-    padding: 0 15px;
-}
-}
-
-
-
 .benefits-section {
   padding: 64px 0px; 
   background: #fff;
@@ -27,13 +11,10 @@
 
 
 .section-title {
-font-weight: 400;
-font-size: 36px;
 line-height: 120%;
 letter-spacing: -0.01em;
 text-align: center;
 color: #000;
-max-width: 300px;
 margin: 0 auto 32px;
 }
 
@@ -104,11 +85,8 @@ line-height: 150%;
 
  
   .section-title {
-     max-width: 600px; 
     margin: 0 auto 32px; 
     text-align: center;
-font-weight: 400;
-font-size: 36px;
 line-height: 120%;
 letter-spacing: -0.01em;
 color: #000;
