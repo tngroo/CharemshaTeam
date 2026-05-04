@@ -1,316 +1,236 @@
-body {
-     font-family: 'Mulish', sans-serif;
-    color: #434455;
-    background-color: rgb(255, 255, 255);
+.footer {
+padding: 80px 20px;
+background: #fff;
 }
 
-.section-title,
-.card-title {
- font-family: 'Mulish', sans-serif;
- font-family: var(--font7);
+
+
+.footer-container {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+
+
+.footer-image {
+width: 217px;
+height: 93px;
+display: block;
+margin: 0 auto 32px; /* отступ до иконок */
+
+
+
+}
+
+
+
+.footer-social {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 64px; /* до About us */
+  padding: 0;
+  list-style: none;
+}
+
+.social-link {
+  width: 40px;
+  height: 40px;
+  background: #4D5AE5;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icon {
+  width: 18px;
+  height: 18px;
+  fill: #fff;
+}
+
+
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 24px; /* до линии */
+  padding: 0;
+  list-style: none;
+  text-align: center;
+
 font-weight: 400;
-font-size: 24px;
-line-height: 140%;
-letter-spacing: -0.01em;
-text-align: center;
+font-size: 18px;
+line-height: 150%;
 color: #000;
 }
 
 
-ul, ol {
-list-style-type: none;
-margin: 0;
-padding: 0;
-}
 
-h1,h2,h3,h4,h5,h6, p {
-margin: 0;
-}
+.footer-line {
+  width: 100%;
+  height: 1px;
+  background: #000;
+  margin-bottom: 32px; /* до текста */
 
-a {
-    text-decoration: none;
-}
-
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-
-.visually-hidden {
-position: absolute;
-white-space: nowrap;
-width: 1px;
-height: 1px;
-overflow: hidden;
-border: 0;
-padding: 0;
-clip: rect(0 0 0 0);
-clip-path: inset(100%);
-margin: -1px;
+border: 1px solid rgba(0, 0, 0, 0.2);
+width: 335px;
+height: 0px;
 }
 
 
 
-@media screen and (min-width: 768px) {
-.container {
-    max-width: 768px;
-}
-}
+.footer-copy {
+  text-align: center;
+  font-size: 14px;
+  margin: 0;
 
-@media screen and (min-width: 1158px) {
-.container {
-    max-width: 1158px;
-    padding: 0 15px;
-}
-}
-
-
-/* СЕКЦИЯ */
-.benefits-section {
-  padding: 64px 20px; 
-  background: #fff;
-}
-
-/* КОНТЕЙНЕР */
-.container {
-  width: 100%;
-}
-
-/* ЗАГОЛОВОК */
-.section-title {
-  font-family: var(--font7);
 font-weight: 400;
-font-size: 36px;
-line-height: 120%;
-letter-spacing: -0.01em;
-text-align: center;
+font-size: 14px;
+line-height: 150%;
 color: #000;
-max-width: 300px;
-margin: 0 auto 32px;
 }
 
-/* СПИСОК КАРТОЧЕК */
-.card-list {
-  display: flex;
-  flex-direction: column;
-  gap: 32px; /* 👈 как ты просил */
-  list-style: none;
-  align-items: center; /* 👈 центрируем карточки */
-}
 
-/* КАРТОЧКА */
-.card {
-  width: 335px; /* 👈 фиксированная ширина */
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  padding: 32px 12px;
-  box-sizing: border-box;
-  background: #f2f2f2;
-}
 
-/* ЗАГОЛОВОК В КАРТОЧКЕ */
-.card-title {
-  font-weight: 400;
-font-size: 24px;
-line-height: 140%;
-  text-align: center;
-  margin-bottom: 24px;
-}
 
-/* ТЕКСТ */
-.card-text {
-  font-weight: 400;
-font-size: 16px;
-line-height: 150%;
-  text-align: center;
- 
-}
-
-.card-text-first {
-  font-family: var(--font5);
-font-weight: 400;
-font-size: 16px;
-line-height: 150%;
-  color: #000;
- 
-  text-align: center;
-}
-
-.second-line {
-  text-align: center;  /* центр */
-  font-weight: 400;
-font-size: 16px;
-line-height: 150%;
-}
 
 @media (min-width: 768px) {
-   /* СЕКЦИЯ */
-  .benefits-section {
-    padding: 64px 32px;
-    background: #fff;
-  }
 
-  /* КОНТЕЙНЕР */
-  .container {
-    max-width: 768px;
-    margin: 0 auto;
-  }
+  .footer {
+    padding: 80px 64px;
+    background: #fff;
+  }
 
-  /* ЗАГОЛОВОК */
-  .section-title {
-     max-width: 600px; /* подбираешь */
-    margin: 0 auto 32px; /* 👈 центр + отступ вниз */
-    text-align: center;
-    font-family: var(--font7);
-font-weight: 400;
-font-size: 36px;
-line-height: 120%;
-letter-spacing: -0.01em;
-color: #000;
-  }
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-  /* СПИСОК КАРТОЧЕК */
-  .card-list {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
 
-  /* КАРТОЧКА */
-  .card {
-    width: 704px;
-    max-width: 100%;
-    margin: 0 auto;
 
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    padding: 32px 12px;
-    box-sizing: border-box;
+  .footer-image {
+    width: 217px;
+    height: 93px;
+    display: block;
+     margin: 0 auto 32px;
 
-    background: #f2f2f2;
-  }
+  }
 
-  /* ЗАГОЛОВОК В КАРТОЧКЕ */
-  .card-title {
-    font-weight: 400;
-font-size: 24px;
-line-height: 140%;
-    text-align: center;
-    margin-bottom: 24px;
-  }
 
-  /* ТЕКСТ */
- .card-text {
- font-weight: 400;
-font-size: 16px;
-line-height: 150%;
-  color: #000;
-  text-align: center;
- max-width: 680px;
-}
 
-.card-text-first {
-  font-family: var(--font5);
-font-weight: 400;
-font-size: 16px;
-line-height: 150%;
-  color: #000;
-   text-align: center;
-  max-width: 680px;
-  margin: 0 auto;
-}
+  .footer-social {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 64px;
+    padding: 0;
+    list-style: none;
+  }
 
-.second-line {
-  text-align: center;  /* центр */
-  font-weight: 400;
-font-size: 16px;
-line-height: 150%;
-}
+
+
+  .footer-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-bottom: 24px;
+    text-align: center;
+    padding: 0;
+    list-style: none;
+  }
+
+
+
+  .footer-line {
+    width: 640px;
+    height: 0px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 32px;
+  }
+
+
+
+  .footer-copy {
+    text-align: center;
+    margin: 0;
+  }
 }
 
 
-/* ===== DESKTOP ===== */
-@media (min-width: 1158px) {
-  .benefits-section {
-    padding: 120px 0;
-    background: #fff;
-  }
 
-.container {
-  width: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
+
+
+@media (min-width: 1440px) {
+
+  .footer-container {
+    max-width: 1312px;
+    margin: 0 auto;
+  }
+
+.footer-top {
+  display: flex;
+  justify-content: space-around;
+  gap: 841px;
+  align-items: flex-start;
 }
 
-  /* контейнер карточек */
-  .card-list {
-    display: flex;
-    justify-content: space-between;
-    gap: 32px;
-    flex-direction: row;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    width: 1312px;
-    margin: 0 auto;
-  }
 
-  /* сама карточка */
-  .card {
- border: 1px solid rgba(0, 0, 0, 0.2);
-padding: 32px 12px;
-width: 416px;
-height: 194px;
-background: #f2f2f2;
-  }
 
-  .card-title {
-    font-weight: 400;
-font-size: 24px;
-line-height: 140%;
-    text-align: center;
-     margin-bottom: 24px;
-  }
+  .footer-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 
-  .card-text {
-    font-family: var(--font5);
-font-weight: 400;
-font-size: 16px;
-line-height: 150%;
-text-align: center;
-color: #000;
-width: 392px;
-  }
+  }
 
-  
-.card-text-first {
-  font-weight: 400;
-font-size: 16px;
-line-height: 150%;
-  margin: 0;
-  text-align: center;
-  max-width: 392px;
-}
+  .footer-image {
+    width: 84px;
+    height: 36px;
+    margin-bottom: 32px;
+    display: block;
+    margin: 0 0 32px 0;
+  }
 
-.second-line {
-  text-align: center; 
-  font-weight: 400;
-font-size: 16px;
-line-height: 150%;
-}
+  .footer-social {
+    display: flex;
+    gap: 16px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
 
-  .section-title {
-    max-width: 870px;
-    font-family: var(--font7);
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 120%;
-    letter-spacing: -0.01em;
-    text-align: center;
-    color: #000;
-    margin: 0 auto 32px;
-      
-  }
+
+
+  .footer-right {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .footer-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+     align-items: flex-start;
+  text-align: left;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+
+
+  .footer-line {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin: 32px 0;
+  }
+
+
+
+  .footer-copy {
+    text-align: center;
+    margin: 0;
+  }
 }
