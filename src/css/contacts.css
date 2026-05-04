@@ -77,8 +77,10 @@
   margin-bottom: 24px;
 }
 .feedback-label {
-  /* Чомусь не працює маржин (Name* Phone*...)*/
+  /* label inline ел. */
   margin-bottom: 8px;
+
+  display: block;
 }
 .feedback-field {
   display: flex;
@@ -94,6 +96,13 @@
 
   outline: none;
 }
+/* Invalid */
+
+.feedback-input:invalid:not(:placeholder-shown) {
+  border-color: #8c0000;
+  color: #8c0000;
+}
+
 .feedback-input::placeholder {
   color: #000000;
   opacity: 60%;
@@ -119,6 +128,7 @@
 
   border: 1px solid #000000;
 }
+
 .comment-form:focus {
   border-color: #ccc16e;
 }
@@ -195,10 +205,10 @@
     .connect_slogan {
     }
     /* Shop Information */
-    .wrapper-form-contacts{
+    .wrapper-form-contacts {
       display: flex;
       flex-direction: row-reverse;
-       gap: 32px;
+      gap: 32px;
     }
     .inform-shop {
       /* justify-content: end; */
@@ -237,6 +247,5 @@
     .feedback-button {
       width: 194px;
     }
-
   }
 }
