@@ -55,10 +55,16 @@ a.btn.inactive {
 
 a {
   cursor: pointer;
+<<<<<<< HEAD
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   color: #000000;
+=======
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000000;
+>>>>>>> c45abf73c67e35a9a0500af76c61862e2fc175c6
 }
 
 a:hover,
@@ -84,3 +90,11 @@ a.inactive {
   opacity: 30%;
   pointer-events: none;
 }
+<<<<<<< HEAD
+=======
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+>>>>>>> c45abf73c67e35a9a0500af76c61862e2fc175c6
