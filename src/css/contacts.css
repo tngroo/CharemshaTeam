@@ -195,12 +195,20 @@
     .connect_slogan {
     }
     /* Shop Information */
+    .wrapper-form-contacts{
+      display: flex;
+      flex-direction: row-reverse;
+       gap: 32px;
+    }
     .inform-shop {
-      justify-content: end;
+      /* justify-content: end; */
+      display: flex;
       flex-wrap: wrap;
+
       /* margin-right: 32px; */
     }
     .inform-shop__item {
+      width: calc((100%-32) / 2);
       /* width: 304px; */
     }
     .inform-shop__icon {
@@ -222,11 +230,13 @@
     .feedback-input {
     }
     .feedback-wrapper-comment {
+      width: 610px;
     }
     .comment-form {
     }
     .feedback-button {
       width: 194px;
     }
+
   }
 }
