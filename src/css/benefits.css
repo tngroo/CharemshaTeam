@@ -16,7 +16,7 @@
 
 
 .benefits-section {
-  padding: 64px 20px; 
+  padding: 64px 0px; 
   background: #fff;
 }
 
@@ -27,7 +27,6 @@
 
 
 .section-title {
-  font-family: var(--font7);
 font-weight: 400;
 font-size: 36px;
 line-height: 120%;
@@ -71,16 +70,13 @@ line-height: 140%;
 font-size: 16px;
 line-height: 150%;
   text-align: center;
- 
 }
 
 .card-text-first {
-  font-family: var(--font5);
 font-weight: 400;
 font-size: 16px;
 line-height: 150%;
   color: #000;
- 
   text-align: center;
 }
 
@@ -96,7 +92,7 @@ line-height: 150%;
 @media (min-width: 768px) {
   
   .benefits-section {
-    padding: 64px 32px;
+    padding: 64px 0px;
     background: #fff;
   }
 
@@ -111,7 +107,6 @@ line-height: 150%;
      max-width: 600px; 
     margin: 0 auto 32px; 
     text-align: center;
-    font-family: var(--font7);
 font-weight: 400;
 font-size: 36px;
 line-height: 120%;
@@ -162,7 +157,6 @@ line-height: 150%;
 }
 
 .card-text-first {
-  font-family: var(--font5);
 font-weight: 400;
 font-size: 16px;
 line-height: 150%;
@@ -184,7 +178,7 @@ line-height: 150%;
 /* ===== DESKTOP ===== */
 @media (min-width: 1440px) {
   .benefits-section {
-    padding: 120px 0;
+    padding: 120px 0px;
     background: #fff;
   }
 
@@ -225,7 +219,6 @@ line-height: 140%;
   }
 
   .card-text {
-    font-family: var(--font5);
 font-weight: 400;
 font-size: 16px;
 line-height: 150%;
@@ -253,7 +246,6 @@ line-height: 150%;
 
   .section-title {
     max-width: 870px;
-    font-family: var(--font7);
     font-weight: 400;
     font-size: 40px;
     line-height: 120%;
