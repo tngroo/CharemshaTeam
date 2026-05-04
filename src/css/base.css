@@ -76,3 +76,8 @@ a.inactive {
   opacity: 30%;
   pointer-events: none;
 }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
