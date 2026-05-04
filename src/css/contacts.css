@@ -3,7 +3,10 @@
 }
 
 .connect_subject {
+  font-weight: 600;
   margin-bottom: 16px;
+
+  text-align: left;
 }
 .connect_heading {
   font-weight: 400;
@@ -16,6 +19,8 @@
   width: 335px;
 
   margin-bottom: 24px;
+
+  text-align: left;
 }
 .connect_slogan {
   font-weight: 400;
@@ -25,18 +30,22 @@
   width: 335px;
 
   margin-bottom: 48px;
+
+  text-align: left;
 }
 
 /* Shop Information */
 
 .inform-shop {
-  margin-bottom: 34px;
+  margin-bottom: 32px;
+
+  text-align: left;
 }
 
 .inform-shop__item {
   margin-bottom: 24px;
 }
-/* прибираємо останній відступ, щоб зробити 34 */
+/* прибираємо останній відступ, щоб зробити 32 */
 .inform-shop__item:last-child {
   margin-bottom: 0;
 }
@@ -77,13 +86,23 @@
   justify-content: flex-start;
 }
 .feedback-input {
-  border: 1px solid #000000 15%;
+  border: 1px solid #000000;
 
   padding: 8px 12px;
 
   width: 100%;
 
   outline: none;
+}
+.feedback-input::placeholder {
+  color: #000000;
+  opacity: 60%;
+}
+.feedback-input:focus::placeholder {
+  opacity: 0;
+}
+.feedback-input:focus {
+  border-color: #ccc16e;
 }
 .feedback-wrapper-comment {
   margin-bottom: 24px;
@@ -97,7 +116,117 @@
   resize: none;
   /* прибирає контур коментаря(інпута) при фокусі */
   outline: none;
+
+  border: 1px solid #000000;
+}
+.comment-form:focus {
+  border-color: #ccc16e;
+}
+.comment-form:focus::placeholder {
+  opacity: 0;
+}
+.comment-form::placeholder {
+  color: #000000;
+  opacity: 60%;
 }
 .feedback-button {
   width: 100%;
+}
+.feedback-button:active {
+  box-shadow: inset 0 0 8px 0 rgba(0, 0, 0, 0.32);
+  background-color: #ccc16e;
+}
+@media only screen and (min-width: 768px) {
+  .connect_subject {
+  }
+  .connect_heading {
+    width: 704px;
+  }
+  .connect_slogan {
+    width: 704px;
+  }
+  /* Shop Information */
+
+  .inform-shop {
+    display: flex;
+
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+  }
+  .inform-shop__item {
+    margin: 0;
+
+    width: 218px;
+  }
+  .inform-shop__icon {
+  }
+  .contact_text {
+  }
+  .inform-contact__link {
+  }
+  /* Feedback Form */
+
+  .feedback-form {
+  }
+  .feedback-wrapper {
+  }
+  .feedback-label {
+  }
+  .feedback-field {
+  }
+  .feedback-input {
+  }
+  .feedback-wrapper-comment {
+  }
+  .comment-form {
+  }
+  .feedback-button {
+    width: 249px;
+
+    margin-left: 0;
+  }
+  @media only screen and (min-width: 1440px) {
+    .connect_subject {
+    }
+    .connect_heading {
+      font-size: 48px;
+    }
+    .connect_slogan {
+    }
+    /* Shop Information */
+    .inform-shop {
+      justify-content: end;
+      flex-wrap: wrap;
+      /* margin-right: 32px; */
+    }
+    .inform-shop__item {
+      /* width: 304px; */
+    }
+    .inform-shop__icon {
+    }
+    .contact_text {
+    }
+    .inform-contact__link {
+    }
+    /* Feedback Form */
+    .feedback-form {
+      width: 640px;
+    }
+    .feedback-wrapper {
+    }
+    .feedback-label {
+    }
+    .feedback-field {
+    }
+    .feedback-input {
+    }
+    .feedback-wrapper-comment {
+    }
+    .comment-form {
+    }
+    .feedback-button {
+      width: 194px;
+    }
+  }
 }

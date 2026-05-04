@@ -1,6 +1,6 @@
 <section class="connect">
   <div class="container">
-    <p class="connect_subject">Connect</p>
+    <h3 class="connect_subject">Connect</h3>
     <h2 class="connect_heading">Order your unique jewelry</h2>
     <p class="connect_slogan">We'd love to hear more details from you!</p>
 
@@ -33,7 +33,8 @@
         </svg>
         <p class="contact_text">Office</p>
         <!-- prettier-ignore -->
-        <a href="https://goo.gl/maps/yourshoplocation" target="_blank" class="inform-contact__link">76-8 Oakington Manor Dr, London, UK</a>
+        <a href="https://goo.gl/maps/shoplocation" target="_blank" class="inform-contact__link" rel="noopener noreferer">76-8 Oakington Manor Dr, London, UK
+        </a>
       </div>
     </div>
 
@@ -48,6 +49,8 @@
             id="userName"
             name="userName"
             placeholder="Tony"
+            pattern="^[a-zA-Z\s\.]{5,28}$"
+            required
           />
         </div>
       </div>
@@ -61,6 +64,8 @@
             id="userPhone"
             name="userPhone"
             placeholder="+1 234 123 23"
+            pattern="^\+\d[\d\s]{13}$"
+            required
           />
         </div>
       </div>
@@ -71,10 +76,12 @@
       <div class="feedback-field">
         <textarea
           class="comment-form"
+          type="submit"
           name="userComment"
           rows="8"
           placeholder="Type your message..."
           id="userComment"
+          maxlength="500"
         ></textarea>
       </div>
     </div>
