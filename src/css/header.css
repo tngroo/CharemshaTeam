@@ -20,9 +20,7 @@
 .header__nav {
   display: none;
 }
-.header__logo-link {
-  padding: 12px 0;
-}
+
 .header__button-order {
   display: none;
 }
