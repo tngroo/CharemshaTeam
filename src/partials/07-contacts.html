@@ -1,1 +1,94 @@
-<section class="connect">connect</section>
+<section class="connect" id="contacts">
+  <div class="container">
+    <h3 class="connect_subject">Connect</h3>
+    <h2 class="connect_heading">Order your unique jewelry</h2>
+    <p class="connect_slogan">We'd love to hear more details from you!</p>
+
+    <!-- Shop Information -->
+
+    <div class="wrapper-form-contacts">
+      <div class="inform-shop">
+        <div class="inform-shop__item">
+          <svg class="inform-shop__icon" width="32" height="32">
+            <use href="../img/symbol-defs.svg#icon-envelope"></use>
+          </svg>
+          <p class="contact_text">Email</p>
+          <a href="mailto:info@handmadejewelry.com" class="inform-contact__link"
+            >info@handmadejewelry.com</a
+          >
+        </div>
+  
+        <div class="inform-shop__item">
+          <svg class="inform-shop__icon" width="32" height="32">
+            <use href="../img/symbol-defs.svg#icon-phone"></use>
+          </svg>
+          <p class="contact_text">Phone</p>
+          <a href="tel:+15550000000" class="inform-contact__link"
+            >+1 (555) 000-0000</a
+          >
+        </div>
+  
+        <div class="inform-shop__item">
+          <svg class="inform-shop__icon" width="32" height="32">
+            <use href="../img/symbol-defs.svg#icon-map"></use>
+          </svg>
+          <p class="contact_text">Office</p>
+          <!-- prettier-ignore -->
+          <a href="https://goo.gl/maps/shoplocation" target="_blank" class="inform-contact__link" rel="noopener noreferer">76-8 Oakington Manor Dr, London, UK
+          </a>
+        </div>
+      </div>
+  
+      <!-- Feedback Form -->
+      <form class="feedback-form" name="feedback-form" id="order">
+        <div class="feedback-wrapper">
+          <label class="feedback-label" for="userName">Name*</label>
+          <div class="feedback-field">
+            <input
+              class="feedback-input"
+              type="text"
+              id="userName"
+              name="userName"
+              placeholder="Tony"
+              pattern="^[a-zA-Z\s\.]{5,28}$"
+              required 
+            />
+          </div>
+        </div>
+  
+        <div class="feedback-wrapper">
+          <label class="feedback-label" for="userPhone">Phone*</label>
+          <div class="feedback-field">
+            <input
+              class="feedback-input"
+              type="tel"
+              id="userPhone"
+              name="userPhone"
+              placeholder="+1 234 123 23"
+              pattern="^\+\d[\d\s]{13}$"
+              required
+            />
+          </div>
+        </div>
+    
+      <!-- prettier-ignore -->
+      <div class="feedback-wrapper-comment">
+      <label class="feedback-label" for="userComment"
+        >Describe what you want</label>
+      <div class="feedback-field">
+        <textarea
+          class="comment-form"
+          type="submit"
+          name="userComment"
+          rows="8"
+          placeholder="Type your message..."
+          id="userComment"
+          maxlength="500"
+        ></textarea>
+      </div>
+    </div>
+      <button class="feedback-button" type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+</section>
