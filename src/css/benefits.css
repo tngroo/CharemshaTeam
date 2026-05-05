@@ -72,19 +72,6 @@ line-height: 150%;
 
 
 @media (min-width: 768px) {
-  
-  .benefits-section {
-    padding: 64px 0px;
-    background: #fff;
-  }
-
-
-  .container {
-    max-width: 768px;
-    margin: 0 auto;
-  }
-
- 
   .section-title {
     font-size: 36px;
     margin: 0 auto 32px; 
@@ -157,17 +144,6 @@ line-height: 150%;
 
 /* ===== DESKTOP ===== */
 @media (min-width: 1440px) {
-  .benefits-section {
-    padding: 120px 0px;
-    background: #fff;
-  }
-
-.container {
-  width: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
-}
-
 
   .card-list {
     display: flex;
