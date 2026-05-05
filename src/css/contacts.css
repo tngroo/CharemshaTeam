@@ -84,8 +84,9 @@
 }
 .feedback-field {
   display: flex;
-  align-items: center;
   justify-content: flex-start;
+  /* для інвалід */
+  flex-direction: column;
 }
 .feedback-input {
   border: 1px solid #000000;
@@ -96,11 +97,25 @@
 
   outline: none;
 }
+
 /* Invalid */
 
 .feedback-input:invalid:not(:placeholder-shown) {
   border-color: #8c0000;
   color: #8c0000;
+}
+.error-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #8c0000;
+
+  opacity: 0;
+  visibility: hidden;
+}
+.feedback-input:invalid:not(:placeholder-shown) + .error-text {
+  opacity: 1;
+  visibility: visible;
 }
 
 .feedback-input::placeholder {
