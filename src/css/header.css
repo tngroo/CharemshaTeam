@@ -8,6 +8,7 @@
   padding: 0;
   margin-right: 0;
   margin-left: auto;
+  margin-right: 0;
 }
 .burger__icon {
   display: flex;
@@ -30,8 +31,8 @@
     padding: 18px 0;
   }
   .header__logo-icon {
-    width: 78px;
-    height: 24px;
+    width: 84px;
+    height: 36px;
   }
   .header__burger {
     display: none;
@@ -48,15 +49,42 @@
     display: flex;
     gap: 16px;
   }
+  /* Кнопка (посилання) */
   .header__button-order {
     display: flex;
     justify-content: center;
+    font-weight: 500;
 
     width: 119px;
 
-    margin-right: 0;
+    margin-left: auto;
+
+    cursor: pointer;
+
+    border: 1px solid #ccc16e;
+    padding: 6px 12px;
+    background-color: #ccc16e;
+
+    text-decoration: none;
+  }
+
+  .header__button-order:active,
+  .header__button-order:focus,
+  .header__button-order:hover {
+    text-decoration: none;
+  }
+
+  .header__button-order:focus,
+  .header__button-order:hover {
+    background-color: #ffffff;
   }
 }
+.header__button-order:active {
+  box-shadow: inset 0 0 8px 0 rgba(0, 0, 0, 0.32);
+  background-color: #ccc16e;
+  color: #000000;
+}
+
 @media only screen and (min-width: 1440px) {
   .header__nav {
     margin-left: 32px;
