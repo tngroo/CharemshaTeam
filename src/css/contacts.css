@@ -87,6 +87,8 @@
   justify-content: flex-start;
   /* для інвалід */
   flex-direction: column;
+  position: relative;
+  display: block;
 }
 .feedback-input {
   /* 60% */
@@ -110,6 +112,9 @@
   font-size: 12px;
   line-height: 1.5;
   color: #8c0000;
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
 
   opacity: 0;
   visibility: hidden;
