@@ -87,9 +87,12 @@
   justify-content: flex-start;
   /* для інвалід */
   flex-direction: column;
+  position: relative;
+  display: block;
 }
 .feedback-input {
-  border: 1px solid #000000;
+  /* 60% */
+  border: 1px solid rgba(0, 0, 0, 0.6);
 
   padding: 8px 12px;
 
@@ -109,7 +112,10 @@
   font-size: 12px;
   line-height: 1.5;
   color: #8c0000;
-  margin-top: 8px;
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+
   opacity: 0;
   visibility: hidden;
 }
@@ -128,6 +134,8 @@
 .feedback-input:focus {
   border-color: #ccc16e;
 }
+/* Comment */
+
 .feedback-wrapper-comment {
   margin-bottom: 24px;
 }
@@ -141,7 +149,7 @@
   /* прибирає контур коментаря(інпута) при фокусі */
   outline: none;
 
-  border: 1px solid #000000;
+  border: 1px solid rgba(0, 0, 0, 0.6);
 }
 
 .comment-form:focus {

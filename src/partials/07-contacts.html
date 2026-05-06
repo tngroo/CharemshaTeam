@@ -1,6 +1,6 @@
 <section class="connect" id="contacts">
   <div class="container">
-    <h3 class="connect_subject">Connect</h3>
+    <p class="connect_subject">Connect</p>
     <h2 class="connect_heading">Order your unique jewelry</h2>
     <p class="connect_slogan">We'd love to hear more details from you!</p>
 
@@ -10,7 +10,7 @@
       <div class="inform-shop">
         <div class="inform-shop__item">
           <svg class="inform-shop__icon" width="32" height="32">
-            <use href="../img/symbol-defs.svg#icon-envelope"></use>
+            <use href="/img/symbol-defs.svg#icon-envelope"></use>
           </svg>
           <p class="contact_text">Email</p>
           <a href="mailto:info@handmadejewelry.com" class="inform-contact__link"
@@ -20,7 +20,7 @@
 
         <div class="inform-shop__item">
           <svg class="inform-shop__icon" width="32" height="32">
-            <use href="../img/symbol-defs.svg#icon-phone"></use>
+            <use href="/img/symbol-defs.svg#icon-phone"></use>
           </svg>
           <p class="contact_text">Phone</p>
           <a href="tel:+15550000000" class="inform-contact__link"
@@ -30,7 +30,7 @@
 
         <div class="inform-shop__item">
           <svg class="inform-shop__icon" width="32" height="32">
-            <use href="../img/symbol-defs.svg#icon-map"></use>
+            <use href="/img/symbol-defs.svg#icon-map"></use>
           </svg>
           <p class="contact_text">Office</p>
           <!-- prettier-ignore -->
@@ -53,7 +53,9 @@
               pattern="^[a-zA-Z\s\.]{5,28}$"
               required
             />
-            <p class="error-text">Error-Text</p>
+            <p class="error-text">
+              Please enter a valid name using English letters only.
+            </p>
           </div>
         </div>
 
@@ -69,7 +71,7 @@
               pattern="^\+\d[\d\s]{13}$"
               required
             />
-            <p class="error-text">Error-Text</p>
+            <p class="error-text">Please enter a valid phone number.</p>
           </div>
         </div>
 
