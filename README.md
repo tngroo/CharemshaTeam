@@ -1,1 +1,1 @@
-My project
+The project aims to create a user-friendly and attractive webpage for a jewelry store. A responsive version of the site has been developed, allowing customers to view a jewelry gallery, read reviews from other buyers, and place orders via a form. Additionally, convenient navigation between sections and interactive elements has been implemented.
